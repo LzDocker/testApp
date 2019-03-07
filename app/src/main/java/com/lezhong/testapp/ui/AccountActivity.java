@@ -105,13 +105,7 @@ public class AccountActivity extends BaseActivity<AccountViewModel, ActivityAcco
 //        mBinding.empty.showLoading();
 //        mBinding.empty.showError();
 //        mBinding.empty.showNoData();
-        mBinding.empty.hide();
-        mBinding.empty.getRetryView().setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mBinding.empty.showNoData();
-            }
-        });
+//    s
     }
 
     private void initview() {

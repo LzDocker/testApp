@@ -73,7 +73,7 @@ dependencies {
     annotationProcessor rootProject.ext.dependencies["dagger-android-compiler"]
     annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
     annotationProcessor rootProject.ext.dependencies["room-compiler"]
-    api project(":common")
+    api project(":core")
 //    println IsBuildMudle.toBoolean()
 //    if (!IsBuildMudle.toBoolean()) {
 ////        implementation project(':moduleAccount')

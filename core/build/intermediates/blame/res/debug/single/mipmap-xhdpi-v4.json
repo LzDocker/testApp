@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/zhangxindang/bf_workspace/testApp/core/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_back.png",
+        "source": "/Users/zhangxindang/bf_workspace/testApp/core/src/main/res/mipmap-xhdpi/ic_back.png"
+    },
+    {
+        "merged": "/Users/zhangxindang/bf_workspace/testApp/core/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_toolbar_back.png",
+        "source": "/Users/zhangxindang/bf_workspace/testApp/core/src/main/res/mipmap-xhdpi/ic_toolbar_back.png"
+    }
+]

@@ -38,8 +38,7 @@ import dagger.android.support.HasSupportFragmentInjector;
 import okhttp3.Interceptor;
 import okhttp3.Request;
 import okhttp3.Response;
-/*MultiDexApplication*/
-public abstract class BaseApplication extends Application implements HasActivityInjector,
+public abstract class BaseApplication extends MultiDexApplication implements HasActivityInjector,
         HasBroadcastReceiverInjector,
         HasFragmentInjector,
         HasServiceInjector,

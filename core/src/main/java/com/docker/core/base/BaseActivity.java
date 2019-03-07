@@ -15,12 +15,15 @@ import android.view.WindowManager;
 import android.widget.LinearLayout;
 
 import com.docker.core.R;
+import com.docker.core.util.Empty;
 import com.docker.core.util.SpTool;
 import com.docker.core.util.ToastTool;
 import com.docker.core.widget.ToolBar;
 import com.gyf.barlibrary.BarHide;
 import com.gyf.barlibrary.ImmersionBar;
 import com.gyf.barlibrary.OnKeyboardListener;
+
+import javax.inject.Inject;
 
 
 public abstract class BaseActivity<VM extends BaseViewModel, VB extends ViewDataBinding> extends BaseInjectActivity {
@@ -32,6 +35,9 @@ public abstract class BaseActivity<VM extends BaseViewModel, VB extends ViewData
     private int mThemeColor = -1;
     protected abstract int getLayoutId();
     public abstract VM getViewModel();
+    @Inject
+    Empty empty;
+
 
     /*
      *  是否要覆盖父布局

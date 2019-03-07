@@ -1,12 +1,15 @@
 package com.docker.core.base;
 
 import android.app.Activity;
+import android.app.Application;
 import android.app.Fragment;
 import android.app.Service;
 import android.content.BroadcastReceiver;
 import android.content.ContentProvider;
 import android.content.Context;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.multidex.MultiDex;
 import android.support.multidex.MultiDexApplication;
 import android.support.v4.app.FragmentActivity;
@@ -35,8 +38,8 @@ import dagger.android.support.HasSupportFragmentInjector;
 import okhttp3.Interceptor;
 import okhttp3.Request;
 import okhttp3.Response;
-
-public abstract class BaseApplication extends MultiDexApplication implements HasActivityInjector,
+/*MultiDexApplication*/
+public abstract class BaseApplication extends Application implements HasActivityInjector,
         HasBroadcastReceiverInjector,
         HasFragmentInjector,
         HasServiceInjector,
@@ -64,6 +67,7 @@ public abstract class BaseApplication extends MultiDexApplication implements Has
     }
 
 
+    @RequiresApi(api = Build.VERSION_CODES.ICE_CREAM_SANDWICH)
     @Override
     public void onCreate() {
         super.onCreate();
@@ -79,6 +83,7 @@ public abstract class BaseApplication extends MultiDexApplication implements Has
     }
 
 
+    @RequiresApi(api = Build.VERSION_CODES.ICE_CREAM_SANDWICH)
     protected void initRefWatcher() {
 
         refWatcher = LeakCanary.install(this);

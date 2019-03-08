@@ -1,9 +1,9 @@
 apply plugin: 'com.android.library'
-//apply plugin: 'com.github.dcendents.android-maven'
-//group = 'com.github.LzDocker'
+apply plugin: 'com.github.dcendents.android-maven'
+group = 'com.github.LzDocker'
 android {
     compileSdkVersion rootProject.ext.android.compileSdkVersion
-    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    buildToolsVersion '28.0.3'
 
     defaultConfig {
         minSdkVersion rootProject.ext.android.minSdkVersion

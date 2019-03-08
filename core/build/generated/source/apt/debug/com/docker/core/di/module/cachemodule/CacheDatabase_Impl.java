@@ -17,7 +17,9 @@ import java.lang.Override;
 import java.lang.String;
 import java.util.HashMap;
 import java.util.HashSet;
+import javax.annotation.Generated;
 
+@Generated("android.arch.persistence.room.RoomProcessor")
 public class CacheDatabase_Impl extends CacheDatabase {
   private volatile CacheEntityDao _cacheEntityDao;
 

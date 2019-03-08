@@ -13,7 +13,9 @@ import java.lang.Long;
 import java.lang.Override;
 import java.lang.String;
 import java.util.Set;
+import javax.annotation.Generated;
 
+@Generated("android.arch.persistence.room.RoomProcessor")
 public class CacheEntityDao_Impl implements CacheEntityDao {
   private final RoomDatabase __db;
 
